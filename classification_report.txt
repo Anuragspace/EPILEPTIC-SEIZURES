@@ -1,0 +1,125 @@
+================================================================
+EPILEPSY DETECTION AND CLASSIFICATION - PROJECT REPORT
+================================================================
+
+PROJECT: Automated Detection and Classification of Epileptic
+         Seizures Using EEG Data and Machine Learning
+
+DATASET: BEED (Bangalore EEG Epilepsy Dataset)
+  - Total Samples: 8000
+  - Training Samples: 5600
+  - Testing Samples: 2400
+  - Number of Features: 8 (after selection)
+  - Classes: 4 (Healthy, Generalized Seizure, Focal Seizure, Seizure Event)
+
+================================================================
+CLASSIFICATION RESULTS
+================================================================
+
+1. SVM:
+   - Accuracy:     78.12%
+   - Sensitivity:  78.12%
+   - Specificity:  92.71%
+   - Precision:    78.57%
+   - F1-Score:     78.04%
+   - Training Time: 2.99 seconds
+
+2. KNN:
+   - Accuracy:     75.54%
+   - Sensitivity:  75.54%
+   - Specificity:  91.85%
+   - Precision:    75.60%
+   - F1-Score:     75.57%
+   - Training Time: 1.87 seconds
+
+3. Random Forest:
+   - Accuracy:     79.92%
+   - Sensitivity:  79.92%
+   - Specificity:  93.31%
+   - Precision:    79.92%
+   - F1-Score:     79.79%
+   - Training Time: 3.97 seconds
+
+4. Naive Bayes:
+   - Accuracy:     70.04%
+   - Sensitivity:  70.04%
+   - Specificity:  90.01%
+   - Precision:    68.65%
+   - F1-Score:     68.21%
+   - Training Time: 1.68 seconds
+
+5. Neural Network:
+   - Accuracy:     71.08%
+   - Sensitivity:  71.08%
+   - Specificity:  90.36%
+   - Precision:    70.16%
+   - F1-Score:     70.08%
+   - Training Time: 6.19 seconds
+
+6. Decision Tree:
+   - Accuracy:     70.12%
+   - Sensitivity:  70.12%
+   - Specificity:  90.04%
+   - Precision:    72.42%
+   - F1-Score:     70.45%
+   - Training Time: 0.16 seconds
+
+================================================================
+BEST CLASSIFIER: Random Forest
+================================================================
+
+Overall Performance:
+  - Accuracy:     79.92%
+  - Sensitivity:  79.92%
+  - Specificity:  93.31%
+  - Precision:    79.92%
+  - F1-Score:     79.79%
+
+Per-Class Performance:
+
+  Class 0 (Healthy):
+    - Sensitivity:  100.00%
+    - Specificity:  99.94%
+    - Precision:    99.83%
+    - F1-Score:     99.92%
+
+  Class 1 (Generalized):
+    - Sensitivity:  78.00%
+    - Specificity:  93.56%
+    - Precision:    80.14%
+    - F1-Score:     79.05%
+
+  Class 2 (Focal):
+    - Sensitivity:  80.00%
+    - Specificity:  88.94%
+    - Precision:    70.69%
+    - F1-Score:     75.06%
+
+  Class 3 (Seizure Event):
+    - Sensitivity:  61.67%
+    - Specificity:  90.78%
+    - Precision:    69.03%
+    - F1-Score:     65.14%
+
+
+================================================================
+CONCLUSION
+================================================================
+
+The Random Forest classifier achieved the highest accuracy of 79.92%
+for automated epilepsy detection and classification.
+
+This demonstrates the effectiveness of machine learning
+algorithms in automated seizure detection from EEG signals.
+
+Generated files:
+  - preprocessing_comparison.png
+  - feature_statistics.png
+  - pca_analysis.png
+  - feature_selection_results.png
+  - classifier_comparison.png
+  - all_confusion_matrices.png
+  - detailed_analysis_rf.png
+  - feature_importance.png
+  - performance_summary.csv
+  - classification_report.txt
